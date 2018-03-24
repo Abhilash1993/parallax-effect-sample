@@ -2,7 +2,7 @@
 ## Using jquery and css
 
 
-Live Demo here - [GitHub Pages](https://mysterious-harbor-51232.herokuapp.com/).
+Live Demo here - [Demo Pages](https://mysterious-harbor-51232.herokuapp.com/).
 
 ###### To run -
 
