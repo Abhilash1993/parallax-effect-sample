@@ -1,6 +1,9 @@
 #  A starter for Parallax effect
 ## Using jquery and css
 
+
+Live Demo here - [GitHub Pages](https://mysterious-harbor-51232.herokuapp.com/).
+
 ###### To run -
 
 ```
