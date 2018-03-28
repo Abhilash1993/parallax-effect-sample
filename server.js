@@ -11,4 +11,4 @@ app.get('*', function(req, res) {
 })
 
 app.listen(process.env.PORT || 8080);
-console.log("Listening on PORT "+ process.env.PORT || 8080);
+console.log("Listening on PORT "+ (process.env.PORT || 8080));
