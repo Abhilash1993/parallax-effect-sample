@@ -5,7 +5,6 @@ $(document).ready(function(){
     {
        $( ".details" ).each(function( index ) {
          var self = this;
-         // $(self).addClass("slideUp");
          setTimeout(function(){
            $(self).addClass("slideUp");
          },100*index)
@@ -16,7 +15,7 @@ $(document).ready(function(){
 function parallaxScroll(){
   var scrolled = $(window).scrollTop();
   $('.background').css('top',(0-(scrolled*.25))+'px');
-  $('.heading').css('top',(0-(scrolled*.25))+'px');
+  // $('.heading').css('top',(0-(scrolled*.25))+'px');
   $('.content').css('margin-top',( scrolled*.25)+'px');
   }
 })
