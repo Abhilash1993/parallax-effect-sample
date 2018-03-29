@@ -11,3 +11,5 @@ npm install
 node server.js
 
 ```
+
+###### Tested on mobile browsers (Safari and chrome)
