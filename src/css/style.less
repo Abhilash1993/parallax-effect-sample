@@ -1,15 +1,15 @@
-body{
+body {
   margin: 0;
   padding: 0;
 }
-.wrapper{
+.wrapper {
   height: 600px;
   position: relative;
 }
-.parallax-section{
+.parallax-section {
   overflow: -webkit-paged-x;
 }
-.background{
+.background {
   background-image: url("../images/1.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -24,7 +24,7 @@ body{
   pointer-events: none;
   height: 600px;
 }
-.heading{
+.heading {
   margin: 0 auto;
   color: white;
   text-align: justify;
@@ -35,7 +35,7 @@ body{
   font-size: 18px;
   width: 300px;
 }
-.content{
+.content {
   margin: 0 auto;
   color: black;
   text-align: justify;
@@ -46,33 +46,33 @@ body{
   font-size: 18px;
   background-color: white;
 }
-.details-wrap{
+.details-wrap {
   display: flex;
   justify-content: space-around;
   flex-flow: row wrap;
   padding: 20px;
   max-width: 800px;
   margin: 0 auto;
-  .details{
-    min-width: 200px;  /* Or whatever */
+  .details {
+    min-width: 200px; /* Or whatever */
     height: 200px; /* Or whatever */
-    margin-top: 20px;  /* Magic! */
+    margin-top: 10px; /* Magic! */
   }
 }
 
-.slideUp{
+.slideUp {
   animation: slideUp 2s forwards;
   border: 1px solid grey;
 }
 @keyframes slideUp {
-    from {
-      opacity: 0;
-      transform: translateY(50%);
-      background-color: white;
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-      background-color: blue;
-    }
+  from {
+    opacity: 0;
+    transform: translateY(50%);
+    background-color: white;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    background-color: blue;
+  }
 }
