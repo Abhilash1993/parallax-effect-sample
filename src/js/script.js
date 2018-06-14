@@ -17,8 +17,10 @@ $(document).ready(function() {
       element: document.getElementById("item_" + index),
       handler: function(direction) {
         if (direction == "down") {
-          console.log();
           $("#" + this.element.id).addClass("slideUp");
+        }
+        if (direction == "up") {
+          $("#" + this.element.id).removeClass("slideUp");
         }
       },
       offset: "30%"
