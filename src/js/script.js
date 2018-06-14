@@ -1,8 +1,6 @@
 $(document).ready(function() {
   $(window).bind("scroll", function(e) {
     parallaxScroll();
-    if ($(window).scrollTop() > 636) {
-    }
   });
 
   function parallaxScroll() {
