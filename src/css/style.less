@@ -2,6 +2,42 @@ body {
   margin: 0;
   padding: 0;
 }
+.nav-wrap{
+  background-color: transparent;
+  position: fixed;
+  height: 100px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  color: white;
+  z-index: 10;
+  -webkit-transition: background-color 300ms linear;
+    -ms-transition: background-color 300ms linear;
+    transition: background-color 300ms linear;
+}
+.nav {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  .head-option {
+    float: left;
+    font-size: 26px;
+    line-height: 100px;
+  }
+  .option {
+    float: right;
+    font-size: 16px;
+    margin-left: 50px;
+    line-height: 100px;
+    cursor: pointer;
+  }
+}
+.nav-background-white{
+  background-color: white;
+  color: black;
+}
 .wrapper {
   height: 600px;
   position: relative;

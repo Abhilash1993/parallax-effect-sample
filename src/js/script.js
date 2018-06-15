@@ -1,10 +1,18 @@
 $(document).ready(function() {
   $(window).bind("scroll", function(e) {
     parallaxScroll();
-    if ($(window).scrollTop() > 636) {
-    }
   });
-
+  $("#waypoint-sample").click(function() {
+    $("html, body").animate(
+      {
+        scrollTop: $("#details").offset().top
+      },
+      1000
+    );
+  });
+  $("#parallax-sample").click(function() {
+     $("html, body").animate({ scrollTop: 0 }, 100);
+  });
   function parallaxScroll() {
     var scrolled = $(window).scrollTop();
     $(".background").css("top", 0 - scrolled * 0.25 + "px");
@@ -19,11 +27,36 @@ $(document).ready(function() {
       element: document.getElementById("item_" + index),
       handler: function(direction) {
         if (direction == "down") {
-          console.log();
           $("#" + this.element.id).addClass("slideUp");
         }
       },
+      offset: "20%"
+    });
+  });
+  //remove slideUp class on the user scrolls up
+  $(".details").each(function(index) {
+    $(this).attr("id", "item_" + index);
+    var waypoint = new Waypoint({
+      element: $(".nav"),
+      handler: function(direction) {
+        $("#details")
+          .children()
+          .removeClass("slideUp");
+      },
       offset: "30%"
     });
+  });
+  //nav panel animation
+  var waypoint = new Waypoint({
+    element: $(".content"),
+    handler: function(direction) {
+      if (direction == "down") {
+        $(".nav-wrap").addClass("nav-background-white");
+      }
+      if (direction == "up") {
+        $(".nav-wrap").removeClass("nav-background-white");
+      }
+    },
+    offset: "10%"
   });
 });
