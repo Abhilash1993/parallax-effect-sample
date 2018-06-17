@@ -33,19 +33,7 @@ $(document).ready(function() {
       offset: "20%"
     });
   });
-  //remove slideUp class on the user scrolls up
-  $(".details").each(function(index) {
-    $(this).attr("id", "item_" + index);
-    var waypoint = new Waypoint({
-      element: $(".nav"),
-      handler: function(direction) {
-        $("#details")
-          .children()
-          .removeClass("slideUp");
-      },
-      offset: "30%"
-    });
-  });
+  
   //nav panel animation
   var waypoint = new Waypoint({
     element: $(".content"),
